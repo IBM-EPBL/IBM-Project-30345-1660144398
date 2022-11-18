@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AR Multi Speciality Hospital</title>
+        <link rel="stylesheet" href="./Chat.css">
+        <style>
+           body {
+            background-image: url('doctor-motivation-technological-advancement-b5wjlwe5wjikoj7t.jpg');
+            background-size: cover;
+            text-align: center;
+            align-content: center;
+            } 
+            button,body{
+                background:linear-gradient(to left,blue,violet,lavender,purple,pink);
+                animation-name: example;
+                animation-duration: 4s;
+                transition: width 2s;
+                margin: auto;
+                text-align: center;
+                align-content: center;
+                height: 100px;
+                font-size:large;
+                font-weight: bold;
+                font-family: Bodoni Mt;
+              }
+              @keyframes example {
+                0%   {background:linear-gradient(to left,blue,violet,lavender,purple,pink);}
+                25%  {background:linear-gradient(to right,blueviolet,cyan,red,orange,indigo,brown,pink);}
+                35%  {background:linear-gradient(to left,rgb(244, 95, 255),darkmagenta,lawngreen,lightcoral,purple,plum);}
+                45% {background:linear-gradient(to right,rgb(0, 255, 0),burlywood,rgb(139, 50, 240),rgb(186, 1, 167),rgb(127, 165, 255),blue);}
+                55% {background:linear-gradient(to left,blue,rgb(116, 237, 158),lavender,rgb(117, 255, 107),rgb(255, 189, 200));}
+                100% {background:linear-gradient(to left,blue,violet,purple,pink,brown,pink,lightcoral,violet)};
+              }
+        </style>
+    </head>
+    <body >
+        <h1 style="color:rgb(0, 0, 0);">AR MULTISPECIALITY HOSPITAL</h1>
+        <div></div>
+        <button><a href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fus-south.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-853e0dc9-e136-484b-8c7e-1494f0401e39%3A%3Afcbdc17f-bf30-48db-bfc8-2b02fa60b6f7&integrationID=57957350-c0ad-45fe-92f3-312204ef3785&region=us-south&serviceInstanceID=853e0dc9-e136-484b-8c7e-1494f0401e39">Chat Bot Service</a></button>
+        <!-- Embed-->
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "57957350-c0ad-45fe-92f3-312204ef3785", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "853e0dc9-e136-484b-8c7e-1494f0401e39", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </body>
+</html>
